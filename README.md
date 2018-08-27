@@ -4,3 +4,8 @@ Escape the labirynth type of game. But well... you're able to push walls to you 
 - trolls can find you fairly easy
 - after winning/losing player recives messages on the screen
 - possibility to restart
+
+
+Play example:
+
+![Game window](/screenshots/play_example.gif)
