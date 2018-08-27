@@ -138,9 +138,7 @@ class Game:
         self.trolls_action()
         self.refresh_hero_map()
         self.turn += 1
-        if self.status == 2 and self.hero.coor in self.top_layer_map.grid:
-            self.top_layer_map.add_text('What are you looking for?')
-        elif self.is_lost():
+        if self.is_lost():
             self.lose()
         self.view.set(str(self))
 
@@ -213,7 +211,7 @@ class Game:
         return self.check_space(self.hero.coor, direction, 2)
 
     def push_wall(self, direction):
-        """ Moved a wall near hero in given direction
+        """ Moves a wall near hero in given direction
         """
         if direction == 'up':
             self.map.grid[self.hero.coor[0]-1, self.hero.coor[1]] = 0
